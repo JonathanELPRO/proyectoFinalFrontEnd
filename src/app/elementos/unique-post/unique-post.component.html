@@ -1,0 +1,9 @@
+<div *ngFor = "let post of posts">
+    <h2>{{post.titulo}}</h2>
+    <h3>user: {{post.user.nombre}}</h3>
+    <h4>{{post.fecha}}</h4>
+    <p>{{post.contenido}}</p>
+    <h4>COMENTARIOS</h4>
+    <app-comments-for-post [postId] = post.id></app-comments-for-post>
+    <button *ngIf="userId" (click)="eliminarPost(post.id)">ELIMINAR POST</button>
+</div>

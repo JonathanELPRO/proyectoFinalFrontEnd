@@ -1,0 +1,4 @@
+<app-unique-post [posts] = "datosRecuperados" *ngIf = "datosRecuperados"></app-unique-post>
+
+<h2>Tus posts</h2>
+<app-unique-post [userId]="this.userId" [posts] = "postsPersonales" *ngIf = "postsPersonales"></app-unique-post>
