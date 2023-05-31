@@ -7,6 +7,10 @@ import { PostsComponent } from './paginas/posts/posts.component';
 import { HeaderComponent } from './elementos/header/header.component';
 import { UniquePostComponent } from './elementos/unique-post/unique-post.component';
 import { CommentsForPostComponent } from './elementos/comments-for-post/comments-for-post.component';
+import { DetallePComponent } from './paginas/detalle-p/detalle-p.component';
+import { FormularioReactivoPostComponent } from './elementos/formulario-reactivo-post/formulario-reactivo-post.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MisPostsComponent } from './paginas/mis-posts/mis-posts.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +18,15 @@ import { CommentsForPostComponent } from './elementos/comments-for-post/comments
     PostsComponent,
     HeaderComponent,
     UniquePostComponent,
-    CommentsForPostComponent
+    CommentsForPostComponent,
+    DetallePComponent,
+    FormularioReactivoPostComponent,
+    MisPostsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

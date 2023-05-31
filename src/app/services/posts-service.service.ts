@@ -24,4 +24,16 @@ export class PostsService {
     
     
   }
+  obtenerPostSegunId(postId: number) { 
+    return this.http.get('http://localhost:3000/posts/unPost/' + postId.toString())
+  }
+
+  modificarPost(postId:number,formulario:any)
+  {
+    return this.http.put('http://localhost:3000/posts/'+postId.toString(),formulario)
+  }
+  crearPost(formulario:any)
+  {
+    return this.http.post('http://localhost:3000/posts',formulario)
+  }
 }
