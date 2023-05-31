@@ -10,4 +10,8 @@ export class CommentsService {
   obtenerComentariosForPost(postId: number) {
     return this.http.get('http://localhost:3000/comments/' + postId.toString())
   }
+  crearComment(formulario:any)
+  {
+    return this.http.post('http://localhost:3000/comments',formulario)
+  }
 }

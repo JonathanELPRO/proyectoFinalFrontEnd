@@ -11,6 +11,7 @@ import { DetallePComponent } from './paginas/detalle-p/detalle-p.component';
 import { FormularioReactivoPostComponent } from './elementos/formulario-reactivo-post/formulario-reactivo-post.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MisPostsComponent } from './paginas/mis-posts/mis-posts.component';
+import { DetalleCComponent } from './paginas/detalle-c/detalle-c.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MisPostsComponent } from './paginas/mis-posts/mis-posts.component';
     CommentsForPostComponent,
     DetallePComponent,
     FormularioReactivoPostComponent,
-    MisPostsComponent
+    MisPostsComponent,
+    DetalleCComponent
   ],
   imports: [
     BrowserModule,

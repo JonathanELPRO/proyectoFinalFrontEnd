@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PostsComponent } from './paginas/posts/posts.component';
 import { DetallePComponent } from './paginas/detalle-p/detalle-p.component';
 import { MisPostsComponent } from './paginas/mis-posts/mis-posts.component';
+import { DetalleCComponent } from './paginas/detalle-c/detalle-c.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,9 @@ const routes: Routes = [
   },
   {
     path: "misPosts", component: MisPostsComponent
+  },
+  {
+    path:"detalleComment/:id", component: DetalleCComponent
   }
 ];
 

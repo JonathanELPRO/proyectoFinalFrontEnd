@@ -31,8 +31,8 @@ export class UniquePostComponent {
   {
     this.router.navigate(['/detallePost', postId,0]);
   }
-  // verDetalleDeComentario(postId:number)
-  // {
-  //   this.router.navigate(['/detallePost', postId,0]);
-  // }
+  verDetalleDeComentario(postId:number)
+  {
+    this.router.navigate(['/detalleComment', postId]);
+  }
 }

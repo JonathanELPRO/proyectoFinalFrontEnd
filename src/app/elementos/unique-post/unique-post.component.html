@@ -5,7 +5,7 @@
     <p>{{post.contenido}}</p>
     <h4>COMENTARIOS</h4>
     <app-comments-for-post [postId] = post.id></app-comments-for-post>
-    <!-- <button *ngIf="userId" (click)="verDetalleDeComantario(post.id)">Aniadir comentario</button> -->
+    <button (click)="verDetalleDeComentario(post.id)">Aniadir comentario</button>
     <button *ngIf="userId" (click)="eliminarPost(post.id)">ELIMINAR POST</button>
     <button *ngIf="userId" (click)="verDetalleDePost(post.id)">MODIFICAR POST</button>
 </div>
